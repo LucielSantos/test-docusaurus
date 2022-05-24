@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocussaurus=self.webpackChunkdocussaurus||[]).push([[122],{5692:function(s){s.exports=JSON.parse('{"label":"Test","permalink":"/test-docusaurus/docs/tags/test","allTagsPath":"/test-docusaurus/docs/tags","count":1,"items":[{"id":"test","title":"P\xe1gina de teste","description":"Tabela","permalink":"/test-docusaurus/docs/test"}]}')}}]);
