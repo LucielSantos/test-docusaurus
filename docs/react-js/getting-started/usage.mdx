@@ -6,14 +6,25 @@
 
 Os componentes Stardust foram construídos abstraindo o máximo de configurações, otimizando o tempo de customização!
 
-Mas também foram pensados para deixar esta customização fácil e intuitiva. Todos os componentes podem ser importados de `@stardust-ds/react`, pois utilizamos [Exportações Explicitas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export).
+Mas também foram pensados para deixar esta customização fácil e intuitiva. Todos os componentes e funções podem ser importados de `@stardust-ds/react`, pois utilizamos [Exportações Explicitas](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export).
 
 ## Vamos começar
 
-O uso dos componentes é realmente simples. Aqui está um exemplo:
+O uso dos componentes é realmente simples:
+
+* Importar o componente:
+```tsx
+  import { Button } from '@stardust/react'
+```
+
+* Após feita a importação, é apenas usá-lo:
 
 ```tsx live
-
-
-
+function MyPlayground(props) {
+  return (
+    <div>
+      <Button label='Botão exemplo' />
+    </div>
+  );
+}
 ```
