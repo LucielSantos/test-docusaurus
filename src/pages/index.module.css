@@ -1,0 +1,56 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+.headerImg {
+  width: 400px;
+}
+
+.description {
+  margin: 3rem 0;
+  font-size: 24px;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gettingStartBtn {
+  font-size: 18px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 5rem;
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+.benefits .benefitCard {
+  padding: .5rem;
+  flex: 1;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 1rem;
+  }
+
+  .benefits {
+    padding: 0 1rem;
+  }
+}

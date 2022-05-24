@@ -1,0 +1,69 @@
+---
+  id: installation
+  displayed_sidebar: reactJsSidebar
+  title: Instalação
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Para instalar a biblioteca Stardust React JS você precisa seguir estes passos:
+
+## Instalação do pacote
+Para instalar e salvar nas dependências do `package.json`, execute:
+
+<Tabs groupId='yarn-npm'>
+<TabItem value='yarn' label='yarn'>
+
+  ```shell
+    yarn add @stardust-ds/react
+  ```
+
+</TabItem>
+
+<TabItem value='npm' label='npm'>
+
+```shell
+  npm install @stardust-ds/react
+```
+
+</TabItem>
+</Tabs>
+
+## Importação da fonte
+Stardust React JS foi desenvolvida com base na font Poppins. Portanto, certifique-se de importar em `public/index.html`:
+
+```html
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+```
+
+## Provider do tema
+Após concluir estas configurações, será necessário inserir o `ThemeProvider` no root da aplicação: <br />
+> Por exemplo, em: `src/App.tsx` ou  `src/App.jsx`.
+
+```jsx
+// App.tsx
+
+//1. Importar o ThemeProvider
+import { ThemeProvider } from '@stardust-ds/react';
+import Page from 'path/to/page';
+
+const App = () => {
+  return (
+    //2. Envolver toda a aplicação com o Provider
+    <ThemeProvider>
+      <Page />
+    </ThemeProvider>
+  );
+};
+```
+
+
+<!--
+TODO: Inserir link em "estes passos" para a página apropriada
+-->
+:::tip Integração com styled-components
+  Stardust React JS utiliza `styled-components` como provider de tema. Para agilizar o seu processo, nós possibilitamos que você este tema!
+  Siga estes passos para fazer a configuração necessária.
+:::
